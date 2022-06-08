@@ -30,7 +30,9 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-      - say-goodbye
-      - build:
         context:
           - my-context
+      - say-goodbye
+        context:
+          - another-context
+
