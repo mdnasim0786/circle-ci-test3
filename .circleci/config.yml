@@ -31,3 +31,6 @@ workflows:
     jobs:
       - say-hello
       - say-goodbye
+      - build:
+        context:
+          - my-context
