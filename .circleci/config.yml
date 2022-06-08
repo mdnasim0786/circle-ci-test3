@@ -15,6 +15,11 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
+  say-goodbye:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
       - run:
           name: "Say GoodBue"
           command: "echo Hi, Goodbye!"
