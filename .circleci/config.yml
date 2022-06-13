@@ -86,7 +86,7 @@ jobs:
       - run:
           name: "say hi"
           command: "echo Hello, World!"
-  say hi:
+  say hini:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
     docker:
@@ -141,7 +141,7 @@ jobs:
           name: "say hi"
           command: "echo Hello, World!"  
 
-  say hello3:
+  say hello4:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
     docker:
@@ -155,19 +155,6 @@ jobs:
           name: "say hi"
           command: "echo Hello, World!"
           
-   say hello4:
-    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
-    docker:
-      - image: cimg/base:stable
-    context:
-    # Add steps to the job
-    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
-    steps:
-      - checkout
-      - run:
-          name: "say hi"
-          command: "echo Hello, World!"   
   say hello5:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
@@ -181,19 +168,6 @@ jobs:
       - run:
           name: "say hi"
           command: "echo Hello, World!"   
-   say hello6:
-    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
-    docker:
-      - image: cimg/base:stable
-    context:
-    # Add steps to the job
-    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
-    steps:
-      - checkout
-      - run:
-          name: "say hi"
-          command: "echo Hello, World!"
   say hello6:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
@@ -219,7 +193,7 @@ jobs:
       - checkout
       - run:
           name: "say hi"
-          command: "echo Hello, World!"    
+          command: "echo Hello, World!"
   say hello8:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
@@ -232,8 +206,34 @@ jobs:
       - checkout
       - run:
           name: "say hi"
+          command: "echo Hello, World!"   
+  say hello9:
+    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
+    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
+    docker:
+      - image: cimg/base:stable
+    context:
+    # Add steps to the job
+    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
+    steps:
+      - checkout
+      - run:
+          name: "say hi"
+          command: "echo Hello, World!"    
+  say hello10:
+    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
+    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
+    docker:
+      - image: cimg/base:stable
+    context:
+    # Add steps to the job
+    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
+    steps:
+      - checkout
+      - run:
+          name: "say hi"
           command: "echo Hello, World!"
-   say hello9:
+  say hint:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
     docker:
@@ -246,7 +246,7 @@ jobs:
       - run:
           name: "say hi"
           command: "echo Hello, World!"   
-  say hello10:
+  say he:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
     docker:
@@ -270,16 +270,19 @@ workflows:
       - hello    
       - nita
       - hello nita
-      - hello1
-      - hello2
-      - hello3
-      - hello4
-      - hello5
-      - hello6
-      - hello7
-      - hello8
-      - hello9
-      - hello10
+      - say hello1
+      - say hello2
+      - say hello3
+      - say hello4
+      - say hello5
+      - say hello6
+      - say hello7
+      - say hello8
+      - say hello9
+      - say hello10
+      - say hini
+      - say hint
+      - say he
 steps:
       - run:
           name: Save test results
