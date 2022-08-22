@@ -110,3 +110,6 @@ workflows:
   say-hello-nasim23:
     jobs:
       - say-hello
+  say-hello-nasim24:
+    jobs:
+      - say-hello
